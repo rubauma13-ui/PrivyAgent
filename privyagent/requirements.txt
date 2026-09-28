@@ -1,0 +1,12 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+requests>=2.31
+beautifulsoup4>=4.12
+
+# Local NER inference. Both are optional: without them the firewall runs on
+# deterministic rules plus HTML structure and reports ner_available=false.
+onnxruntime>=1.17
+tokenizers>=0.15
+
+openai>=1.0.0

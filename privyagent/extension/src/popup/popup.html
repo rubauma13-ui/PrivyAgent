@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>PrivyAgent</title>
+  </head>
+  <body>
+    <h1>PrivyAgent</h1>
+    <p class="subtitle">Browser agent</p>
+
+    <label for="task">Enter task</label>
+    <div class="input-group">
+      <textarea id="task" rows="3" placeholder="Find a laptop under 50000"></textarea>
+      <button id="sttButton" type="button" title="Start Dictation">🎤</button>
+    </div>
+
+    <button id="sendButton" type="button">Run task</button>
+
+    <p id="status"></p>
+    <ul id="transcript"></ul>
+    <p id="privacy" class="privacy"></p>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

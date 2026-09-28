@@ -1,0 +1,17 @@
+:root { color-scheme: light dark; }
+body { width: 320px; margin: 0; padding: 14px; font: 13px/1.45 system-ui, sans-serif; }
+h1 { margin: 0; font-size: 16px; }
+.subtitle { margin: 2px 0 12px; opacity: 0.6; font-size: 12px; }
+label { display: block; margin-bottom: 4px; font-weight: 600; }
+textarea { width: 100%; box-sizing: border-box; resize: vertical; padding: 6px; font: inherit; }
+button { margin-top: 8px; width: 100%; padding: 7px; font: inherit; font-weight: 600; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: default; }
+#status { margin: 10px 0 4px; min-height: 1.4em; }
+.status-error { color: #b3261e; }
+.status-success { color: #1b6e2f; }
+#transcript { margin: 0; padding-left: 18px; font-size: 12px; }
+#transcript li { margin-bottom: 3px; }
+.privacy { margin-top: 10px; font-size: 11px; opacity: 0.75; }
+.input-group { display: flex; gap: 6px; align-items: flex-start; }
+.input-group textarea { flex-grow: 1; margin: 0; }
+#sttButton { width: auto; margin-top: 0; padding: 6px 10px; align-self: stretch; font-size: 16px; display: flex; align-items: center; justify-content: center; }

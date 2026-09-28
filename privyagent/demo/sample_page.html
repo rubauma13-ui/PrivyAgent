@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>body { font-family: Arial, sans-serif; }</style>
+</head>
+<body>
+  <h1>Account</h1>
+
+  <p>Email: raghul.sekar@example.com</p>
+  <p>Phone: 9876543210</p>
+  <p>DOB: 12/05/2005</p>
+  <p>Last login from 192.168.1.42</p>
+  <p>Card on file: 4111 1111 1111 1111</p>
+
+  <form action="/login" method="post">
+    <label for="u">Username</label>
+    <input id="u" name="username" autocomplete="username" value="raghul_sekar2005">
+
+    <label for="p">Password</label>
+    <input id="p" name="password" type="password" value="BlueSky!42Secret">
+
+    <input type="hidden" name="csrf_token" value="a91f0c7d44e8b2315c6f">
+    <button type="submit">Log in</button>
+  </form>
+
+  <script>
+    const user = {
+      name: "Raghul Sekar",
+      email: "raghul.sekar@example.com",
+      username: "raghul_sekar2005"
+    };
+    const password_policy = "min8";
+    let user_count = 42;
+    username = get_username();
+    console.log("username");
+  </script>
+</body>
+</html>

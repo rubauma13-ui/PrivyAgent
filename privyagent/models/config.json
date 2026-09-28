@@ -1,0 +1,7 @@
+{
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "max_length": 256,
+  "chunk_chars": 1500,
+  "chunk_overlap": 200,
+  "onnx_int8_size_mb": 33.14
+}

@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "PrivyAgent",
+  "version": "1.0.0",
+  "description": "Privacy-preserving browser agent. Page context is redacted on-device before any model sees it.",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background/background.js", "type": "module" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": { "default_popup": "popup/popup.html", "default_title": "PrivyAgent" },
+  "options_page": "options/options.html"
+}

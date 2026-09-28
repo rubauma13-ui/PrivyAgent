@@ -1,0 +1,42 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+.venv/
+.env_bak/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Extension build
+extension/dist/
+
+# Environment Variables / Secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# IDEs
+.vscode/
+.idea/
+
+# Local testing and artifacts
+test_*.py
+scratch/
+brain/
